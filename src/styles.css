@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-image:
+      repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 95%,
+        rgba(255, 255, 255, 0.1) 95%,
+        rgba(255, 255, 255, 0.1) 100%
+      ),
+      repeating-linear-gradient(
+        90deg,
+        transparent,
+        transparent 95%,
+        rgba(255, 255, 255, 0.1) 95%,
+        rgba(255, 255, 255, 0.1) 100%
+      ),
+      linear-gradient(to right, #7b4397, #dc2430);
+    background-size: 300px 200px;
+    background-position: 0 0, 0 0, 0 0;
+    animation: bricks-animation 8s infinite linear;
+}
+  
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+  
+@keyframes gradient {
+    0% { background-position: 0% }
+    100% { background-position: 100% }
+}
+
+.app-name {
+    font-size: 2.5rem;
+    background: linear-gradient(45deg, #FFA31A,#EEFBFF); 
+    background-size: 200% auto;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: gradient 3s infinite;
+    text-shadow: 4px 4px 4px rgb(44, 62, 80,0.4); 
+}
+  
+.mission-statement {
+      font-family: 'Georgia', serif;
+      font-size: 1.5em;
+      font-weight: bold;
+      margin-top: -20px;
+      text-align: center;
+}
+  
+.ideology {
+    font-size: 1.1rem;
+    font-style: italic;
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-bottom: 4rem; 
+    line-height: 1.6;
+    color: #fff;
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+  
+.main-content {
+    color: white;
+}
+
+.features-container {
+    display: flex;
+    justify-content: space-around; 
+    max-width: 100%;
+    margin: 0 auto; 
+}
+
+.features-column {
+    width: 100%;
+    text-align: center;
+    margin: 10%;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.feature {
+    width: 350px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; 
+    padding: 1rem;
+    border-radius: 5px;
+    margin: 40px;
+    position: relative;
+}
+
+.teacher-feature {
+    background-color: rgba(245, 245, 245, 0.7);
+}
+
+.student-feature {
+    background-color: rgba(245, 245, 245, 0.7); 
+}
+
+.feature-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feature-icon {
+    font-size: 2rem;
+    color: #7b4397;
+    margin-bottom: 0.5rem;
+}
+
+.feature h3 {
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #7b4397;
+}
+
+.feature-description {
+    margin-top: 5px;
+    font-size: 1em;
+    color: #7b4397;
+    font-family: 'Roboto', sans-serif;
+}
+
+  
+.main-content button {
+    background-color: #ffffff;
+    color: #7b4397;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+  
+  
+.material-icons {
+    font-size: 48px;
+    color: #7b4397;
+}
+  
+.citations-section {
+    text-align: center;
+    padding: 50px 0;
+}
+  
+.citations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+  
+.citation {
+    width: 300px;
+    padding: 1.5rem;
+    border: 1px solid rgba(128, 0, 128, 0.3);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+  
+.citation p {
+    font-style: italic;
+    font-size: 1.1em;
+    margin: 0;
+}
+  
+.citation footer {
+    font-weight: bold;
+    margin-top: 10px;
+}
+    
+.scroll-section {
+    scroll-snap-align: start;
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.social-media-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    text-align: center;
+    color:#ffffff;
+}
+.social-media-container a {
+    color: inherit;
+    text-decoration: none;
+    margin: 0 10px;
+}
+.social-media-container h2,h3 {
+    max-width: 800px; 
+    margin-bottom: 20px;
+}
+
+.social-media-container svg {
+    color:#c3d825;
+    transition: color 0.3s ease;
+}
+.social-media-container svg:hover {
+    color: #2593dc;
+}
+.social-media-icons {
+    display: inline-flex;
+    padding: 10px;
+    border: 2px solid #a56ac3; 
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5); 
+    border-radius: 10px; 
+}
+
+  @media (max-width: 768px) {
+      header {
+          position: static;
+          padding: 0.5rem 0;
+      }
+  
+      .app-name {
+          font-size: 24px;
+      }
+  
+      .menu {
+          display: none;
+      }
+  
+      .container {
+          padding: 2rem 0;
+      }
+      
+      .mission-statement {
+          margin-top: 0;
+          font-size: 1.2em;
+      }
+  
+      .ideology {
+          max-width: 95%;
+          font-size: 1em;
+      }
+      
+      .features {
+          flex-direction: column;
+          align-items: center;
+      }
+  
+      .feature {
+          width: 90%;
+          margin: 20px;
+      }
+  
+      .waitlist-form {
+          max-width: 95%;
+      }
+  
+      .citation {
+          width: 100%;
+      }
+
+      .features-container {
+        flex-direction: column; 
+        align-items: center; 
+        padding: 0; 
+      }
+
+      .features-column {
+        width: 80%; 
+      }
+  }
+  
+  @media (max-width: 400px) {
+      header {
+          position: static;
+          padding: 0.5rem 0;
+      }
+  
+      .app-name {
+          font-size: 18px;
+          padding-left: 1.5rem;
+      }
+  
+      .menu {
+          display: none;
+      }
+  
+      .container {
+          padding: 1.5rem 0;
+      }
+      
+      .mission-statement {
+          margin-top: 0;
+          font-size: 1em;
+      }
+  
+      .ideology {
+          max-width: 95%;
+          font-size: 0.9em;
+          margin-bottom: 3rem;
+      }
+      
+      .features {
+          flex-direction: column;
+          align-items: center;
+      }
+  
+      .feature {
+          width: 90%;
+          margin: 20px;
+      }
+  
+  
+      .waitlist-form button {
+          padding: 8px 12px;
+          font-size: 14px;
+      }
+      
+      .waitlist-container h2 {
+          font-size: 1rem; 
+          text-align: center; 
+      }
+      .waitlist-form input {
+          padding: 8px 12px;
+          font-size: 14px;
+      }
+  
+      .citation {
+          width: 100%;
+      }
+  }
+  
+  @keyframes bricks-animation {
+      0% {
+        background-position: 0 0, 0 0;
+      }
+      100% {
+        background-position: 50px 50px, 50px 50px;
+      }
+    }
+    

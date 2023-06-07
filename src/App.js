@@ -40,6 +40,7 @@ function App() {
             <h3>Join our social media, so we could better know your problems, ideas and expectations - Help us to build the best educational experience - Be among the first, who will lay the bricks for the future🧱</h3>
             <div className="social-media-icons">
                 <SocialMedia platform="twitter" link={process.env.REACT_APP_TWITTER_URL} />
+                <SocialMedia platform="facebook" link={process.env.REACT_APP_FACEBOOK_URL} />
                 <SocialMedia platform="instagram" link={process.env.REACT_APP_INSTAGRAM_URL} />
             </div>
           </footer>

@@ -19,7 +19,7 @@ function SocialMedia({ platform, link }) {
     }
     return (
         <a href={link}>
-            <FontAwesomeIcon icon={icon} size="8x"/>
+            <FontAwesomeIcon icon={icon} size="5x"/>
         </a>
     );
 }

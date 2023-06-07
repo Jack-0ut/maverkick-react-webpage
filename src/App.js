@@ -28,8 +28,8 @@ function App() {
                           author="Eugene Solovei" 
                       />
                       <Citation 
-                          quote="We believe that the future of education lies in short, engaging content..."
-                          author="Creator 2"
+                          quote="Education today is boring and not modern. It does not meet the trends of the 21st century. I want to make the learning process more interesting and modern. The goal of our project is to help improve the educational process and make it more effective"
+                          author="Vladyslav Bezruk"
                       />
                   </div>
               </div>
@@ -39,8 +39,8 @@ function App() {
             <h2>I see you like it😍</h2>
             <h3>Join our social media, so we could better know your problems, ideas and expectations - Help us to build the best educational experience - Be among the first, who will lay the bricks for the future🧱</h3>
             <div className="social-media-icons">
-                <SocialMedia platform="twitter" link="https://twitter.com/MaverkickIt" />
-                <SocialMedia platform="instagram" link="https://www.instagram.com/maverkickit/" />
+                <SocialMedia platform="twitter" link={process.env.REACT_APP_TWITTER_URL} />
+                <SocialMedia platform="instagram" link={process.env.REACT_APP_INSTAGRAM_URL} />
             </div>
           </footer>
 

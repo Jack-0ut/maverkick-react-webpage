@@ -39,9 +39,9 @@ function App() {
             <h2>I see you like it😍</h2>
             <h3>Join our social media, so we could better know your problems, ideas and expectations - Help us to build the best educational experience - Be among the first, who will lay the bricks for the future🧱</h3>
             <div className="social-media-icons">
-                <SocialMedia platform="twitter" link={process.env.REACT_APP_TWITTER_URL} />
-                <SocialMedia platform="facebook" link={process.env.REACT_APP_FACEBOOK_URL} />
-                <SocialMedia platform="instagram" link={process.env.REACT_APP_INSTAGRAM_URL} />
+                <SocialMedia platform="twitter" link="https://twitter.com/maverkick_it" />
+                <SocialMedia platform="facebook" link="https://www.facebook.com/maverkick.official/"/>
+                <SocialMedia platform="instagram" link="https://instagram.com/maverkick.official" />
             </div>
           </footer>
 
